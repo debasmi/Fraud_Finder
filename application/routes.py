@@ -13,10 +13,11 @@ from application.agent.auto_reply import generate_auto_reply
 
 
 from application.agent.risk_score import JobFraudDetector
-from application.agent.job_recommendation import ml_recommender
+from application.agent.job_recommendation import MLJobRecommender
 
 
 fraud_detector = JobFraudDetector()
+ml_recommender = MLJobRecommender()
 
 api_bp = Blueprint('api_bp', __name__)
 
